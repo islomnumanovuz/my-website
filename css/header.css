@@ -1,0 +1,109 @@
+/* Header styles */
+#header {
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+  }
+  
+  .container__logo a {
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    color: var(--skin-color);
+    border: 1px solid var(--skin-color);
+    border-radius: 50%;
+    font-weight: 600;
+  }
+  
+  .container__hamburger-btn {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--bg-black-50);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  
+  .container__hamburger-btn::after {
+    border-radius: 50%;
+  }
+  
+  .outer-shadow {
+    -webkit-box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    box-shadow: var(--outer-shadow);
+  }
+  
+  .inner-shadow {
+    -webkit-box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    box-shadow: var(--inner-shadow);
+  }
+  
+  .hover-in-shadow {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .hover-in-shadow:hover {
+    -webkit-box-shadow: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+    box-shadow: var(--outer-shadow-0);
+  }
+  
+  .hover-in-shadow::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+  
+  .hover-in-shadow:hover:after {
+    -webkit-box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    box-shadow: var(--inner-shadow);
+  }
+  
+  .container__hamburger-btn span {
+    display: block;
+    height: 2px;
+    width: 1rem;
+    background-color: var(--bg-black-900);
+    position: relative;
+  }
+  
+  .container__hamburger-btn span::before,
+  .container__hamburger-btn span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black-900);
+  }
+  
+  .container__hamburger-btn span::before {
+    top: -6px;
+  }
+  
+  .container__hamburger-btn span::after {
+    top: 6px;
+  }
+  
+  /* /Header styles */

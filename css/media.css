@@ -1,0 +1,61 @@
+@media (max-width: 768px){
+    .home-section__title, 
+    .home-section__img,
+    .about-section__img,
+    .about-section__info,
+    .about-section .skills .skill-item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home-section__title{
+        order: 2;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .home-section__title h2{
+        font-size: 2.5rem;
+    }
+    .home-section .full-screen{
+        padding: 100px 0;
+    }
+    .home-section__img .img-box{
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+    .effect-4{
+        left: 12%;
+    }
+    .effect-3{
+        height: 100px;
+        width: 100px;
+        border: 18px solid var(--skin-color);
+        border-radius: 50%;
+        left: 50%;
+        top: -60px;
+    }
+    .effect-5{
+        top: 50%;
+        right: 5%;
+    }
+    .about-section__img{
+        padding-bottom: 30px;
+    }
+    .about-section .experience__timeline-item:nth-child(odd){
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+    .about-section .exprience__timeline-item:nth-child(even){
+        padding-left: 75px;
+    }
+    .about-section .education__timeline-item:nth-child(odd){
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+    .about-section .education__timeline-item:nth-child(even){
+        padding-left: 75px;
+    }
+}

@@ -1,0 +1,94 @@
+@import "variable.css";
+.style-switcher {
+    position: fixed;
+    right: 0;
+    top: 77px;
+    padding: 15px;
+    width: 200px;
+    z-index: 101;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: var(--bg-black-50);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  
+  .style-switcher .c-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    right: 100%;
+    margin-right: 15px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    color: var(--bg-black-900);
+    background-color: var(--bg-black-50);
+  }
+  
+  .style-switcher .c-icon i {
+    line-height: 40px;
+  }
+  
+  .style-switcher .c-icon::after {
+    border-radius: 50%;
+  }
+  
+  .style-switcher__toggler {
+    top: 0;
+  }
+  
+  .style-switcher__day-night {
+    top: 55px;
+  }
+  
+  .style-switcher h4 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-black-700);
+  }
+  
+  .style-switcher__colors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .style-switcher__colors span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .style-switcher.open {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  .style-switcher__colors .color-1{
+    background-color: #fb839e;
+  }
+  .style-switcher__colors .color-2{
+    background-color: #ec9412;
+  }
+  .style-switcher__colors .color-3{
+    background-color: #1fc586;
+  }
+  .style-switcher__colors .color-4{
+    background-color: #2eb1ed;
+  }
+  .style-switcher__colors .color-5{
+    background-color: #cc3a3b;
+  }
